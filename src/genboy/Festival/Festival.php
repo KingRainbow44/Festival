@@ -990,6 +990,8 @@ class Festival extends PluginBase implements Listener{
 				        case "enter":
 						case "leave":
 						case "center":
+
+                        // death, break
 				            if( isset($areaname) && isset($cmdid) && isset($cmdstring) ){
 								$area = $this->areas[$areaname];
 								$cmds = $area->commands;
