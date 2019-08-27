@@ -2003,12 +2003,6 @@ class Festival extends PluginBase implements Listener{
         }else{
             $fly = false; // flag default
         }
-        // Survival Mode = 0, Creative Mode = 1, Adventure Mode = 2, Spectator Mode = 4
-        if( $player->hasPermission("festival") || $player->hasPermission("festival.access") || $player->getGamemode() === 1 ){ // ! if( $player->isOp() ){
-            $fly = true;
-            $player->setAllowFlight(true);
-            return $fly;
-        }
 
         $msg = '';
         if( !$fly && $player->isFlying() ){
