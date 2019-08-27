@@ -1,6 +1,6 @@
 name: Festival
 author: Genboy
-version: 2.0.1
+version: 2.0.2
 main: genboy\Festival\Festival
 load: POSTWORLD
 api: [3.0.0]
